@@ -36,10 +36,10 @@ echo -e "config interface 'loopback'
 config interface 'lan'
 \toption proto 'static'
 \toption device 'eth0'
-\toption ipaddr '192.168.31.3'
+\toption ipaddr '172.18.60.6'
 \toption netmask '255.255.255.0'
-\toption gateway '192.168.31.1'
-\toption dns '192.168.31.1'" >> /etc/config/network
+\toption gateway '172.18.60.254'
+\toption dns '172.18.60.254'" >> /etc/config/network
 uci set dhcp.lan.ignore=1
 uci set dhcp.lan.dhcpv6=disabled
 uci set dhcp.lan.ra=disabled
